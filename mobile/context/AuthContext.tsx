@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             id: firebaseUser.uid as any, // Using string ID for Firebase
             email: userData.email,
             name: userData.name || 'User',
-            phone: userData.phone,
+            phone: userData.phone || null,
             addresses: [],
         };
 

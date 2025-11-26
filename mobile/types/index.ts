@@ -13,7 +13,7 @@ export interface User {
     email: string;
     password?: string; // Optional for frontend state
     name: string;
-    phone?: string;
+    phone: string | null;
     addresses: Address[];
 }
 

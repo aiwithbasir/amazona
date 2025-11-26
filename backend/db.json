@@ -9,20 +9,241 @@
       "addresses": []
     }
   ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "image": "https://images.unsplash.com/photo-1577375729078-820d5283031c?w=500&q=80",
+      "order": 1,
+      "subCategories": [
+        {
+          "id": "1-1",
+          "name": "Smartphones"
+        },
+        {
+          "id": "1-2",
+          "name": "Laptops"
+        },
+        {
+          "id": "1-3",
+          "name": "Audio"
+        },
+        {
+          "id": "1-4",
+          "name": "Accessories"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Fashion",
+      "image": "https://images.unsplash.com/photo-1590159983013-d4ff5fc71c1d?w=500&q=80",
+      "order": 2,
+      "subCategories": [
+        {
+          "id": "2-1",
+          "name": "Men"
+        },
+        {
+          "id": "2-2",
+          "name": "Women"
+        },
+        {
+          "id": "2-3",
+          "name": "Kids"
+        },
+        {
+          "id": "2-4",
+          "name": "Accessories"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Home",
+      "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=500&q=80",
+      "order": 3,
+      "subCategories": [
+        {
+          "id": "3-1",
+          "name": "Kitchen"
+        },
+        {
+          "id": "3-2",
+          "name": "Furniture"
+        },
+        {
+          "id": "3-3",
+          "name": "Decor"
+        },
+        {
+          "id": "3-4",
+          "name": "Bedding"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Books",
+      "image": "https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?q=80&w=500",
+      "order": 4,
+      "subCategories": [
+        {
+          "id": "4-1",
+          "name": "Fiction"
+        },
+        {
+          "id": "4-2",
+          "name": "Non-Fiction"
+        },
+        {
+          "id": "4-3",
+          "name": "Sci-Fi"
+        },
+        {
+          "id": "4-4",
+          "name": "Biography"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Health & Beauty",
+      "image": "https://images.unsplash.com/photo-1531751519425-e1fa9110434b?q=80&w=500",
+      "order": 5,
+      "subCategories": [
+        {
+          "id": "5-1",
+          "name": "Skincare"
+        },
+        {
+          "id": "5-2",
+          "name": "Makeup"
+        },
+        {
+          "id": "5-3",
+          "name": "Haircare"
+        },
+        {
+          "id": "5-4",
+          "name": "Fragrance"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Toys",
+      "image": "https://images.unsplash.com/photo-1641563817292-d2085b953e78?q=80&w=500",
+      "order": 6,
+      "subCategories": [
+        {
+          "id": "6-1",
+          "name": "Action Figures"
+        },
+        {
+          "id": "6-2",
+          "name": "Dolls"
+        },
+        {
+          "id": "6-3",
+          "name": "Puzzles"
+        },
+        {
+          "id": "6-4",
+          "name": "Board Games"
+        }
+      ]
+    }
+  ],
   "products": [
     {
       "id": "1",
-      "name": "Wireless Headphones",
-      "price": 99.99,
-      "originalPrice": 129.99,
+      "name": "JBL Tune 520BT - Wireless On-Ear Headphones, Up to 57H Battery Life and Speed Charge, Lightweight, Comfortable and Foldable Design, Hands-Free Calls with Voice Aware",
+      "price": 39.98,
+      "originalPrice": 69.98,
       "categoryId": "1",
+      "subCategoryId": "1-3",
       "images": [
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80"
+        "/assets/images/p1-1-1.webp",
+        "/assets/images/p1-1-2.webp"
       ],
+      "description": "The JBL Tune 520BT headphones stream powerful JBL Pure Bass sound for up to 57 hours, thanks to the latest 5.3 BT technology. Quickly rechargeable, they sit comfortably on your head even after hours of listening pleasure. With a flat-folding design, the JBL Tune 520BT easily fits in your backpack to follow you everywhere.",
+      "inStock": true,
+      "stockQuantity": 50,
+      "rating": 4.5,
+      "brand": "JBL",
+      "isDeal": true,
+      "isBestseller": true
+    },
+    {
+      "id": "2",
+      "name": "Sony WH-CH720N Noise Cancelling Wireless Headphones Bluetooth Over The Ear Headset with Microphone and Alexa Voice Control, Black",
+      "price": 123.00,
+      "originalPrice": 249.99,
+      "categoryId": "1",
+      "subCategoryId": "1-3",
+      "images": [
+        "/assets/images/p1-2.webp"
+      ],
+      "description": "Sony’s lightest Wireless Noise-cancelling headband ever. Take noise cancelling to the next level with Sony’s Integrated Processor V1, so you can fully immerse yourself in the music. Super comfortable and lightweight design. Adjustable Ambient Sound mode and Adaptive Sound control features tailors sound to suit the environment around you. Up to 35-hour battery life with quick charging (3 min charge for up to 1 hour of playback).",
+      "inStock": true,
+      "stockQuantity": 50,
+      "rating": 4.5,
+      "brand": "Sony",
+      "isDeal": true,
+      "isBestseller": true
+    },
+    {
+      "id": "3",
+      "name": "New Bose QuietComfort Ultra Bluetooth Headphones (2nd Gen), Wireless Headphones with Spatial Audio, Over Ear Noise Cancelling with Mic, Up to 30 Hours of Play time, Midnight Violet - Limited Edition",
+      "price": 123.00,
+      "originalPrice": 249.99,
+      "categoryId": "1",
+      "subCategoryId": "1-3",
+      "images": [
+        "/assets/images/p1-3.webp"
+      ],
+      "description": "Awaken your sound with QuietComfort Ultra Headphones (2nd Gen). Obsessively engineered with Bose’s best noise cancellation for headphones, plus spatialized audio to expand sound, every beat hits harder and every melody takes up more space. Bose Immersive Audio takes what you’re hearing out of your head and places it in front of you for a more natural listening experience.",
+      "inStock": true,
+      "stockQuantity": 50,
+      "rating": 4.5,
+      "brand": "Bose",
+      "isDeal": true,
+      "isBestseller": true
+    },
+    {
+      "id": "4",
+      "name": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Wireless Over-Ear Bluetooth, 40H Long ANC Playtime, Hi-Res Audio, Big Bass, Customize via an App, Transparency Mode, Ideal for Travel",
+      "price": 123.00,
+      "originalPrice": 249.99,
+      "categoryId": "1",
+      "subCategoryId": "1-3",
+      "images": [
+        "/assets/images/p1-4.webp"
+      ],
+      "description": "Hybrid Active Noise Cancelling: 2 internal and 2 external mics work in tandem to detect external noise and effectively reduce up to 90% of it, such as planes and car engines. Immerse Yourself in Detailed Audio: The noise cancelling headphones have oversized 40mm dynamic drivers that produce detailed sound and thumping beats with BassUp technology. Compatible with Hi-Res certified audio via the AUX cable for more detail.",
       "inStock": true,
       "stockQuantity": 50,
       "rating": 4.5,
       "brand": "SoundMax",
+      "isDeal": true,
+      "isBestseller": true
+    },
+    {
+      "id": "5",
+      "name": "Sony WH-1000XM6 The Best Wireless Noise Canceling Headphones, HD NC Processor QN3, 12 Microphones, Adaptive NC Optimizer, Mastered by Engineers, Studio-Quality, 30-Hour Battery",
+      "price": 123.00,
+      "originalPrice": 249.99,
+      "categoryId": "1",
+      "subCategoryId": "1-3",
+      "images": [
+        "/assets/images/p1-5.webp"
+      ],
+      "description": "Developed in collaboration with world-renowned mastering audio engineers, these headphones deliver unparalleled sound clarity and precision. A specially designed driver with a lightweight carbon fiber dome delivers high fidelity sound, where rich vocals and every instrument remains pure and balanced. Optimized for advanced noise cancellation, the WH-1000XM6 headphones keep every frequency crisp and true to the artist’s intent.",
+      "inStock": true,
+      "stockQuantity": 50,
+      "rating": 4.5,
+      "brand": "Sony",
       "isDeal": true,
       "isBestseller": true
     },
@@ -32,8 +253,9 @@
       "price": 199.99,
       "originalPrice": 249.99,
       "categoryId": "1",
+      "subCategoryId": "1-3",
       "images": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
+        "https://images.unsplash.com/photo-1669049358893-9a727252b5f1?q=80&w=500"
       ],
       "inStock": true,
       "stockQuantity": 30,
@@ -48,6 +270,7 @@
       "price": 79.99,
       "originalPrice": 99.99,
       "categoryId": "2",
+      "subCategoryId": "2-1",
       "images": [
         "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80"
       ],
@@ -57,44 +280,6 @@
       "brand": "RunFast",
       "isDeal": true,
       "isBestseller": false
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "Electronics",
-      "image": "https://images.unsplash.com/photo-1577375729078-820d5283031c?w=500&q=80",
-      "order": 1
-    },
-    {
-      "id": "2",
-      "name": "Fashion",
-      "image": "https://images.unsplash.com/photo-1590159983013-d4ff5fc71c1d?w=500&q=80",
-      "order": 2
-    },
-    {
-      "id": "3",
-      "name": "Home",
-      "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=500&q=80",
-      "order": 3
-    },
-    {
-      "id": "4",
-      "name": "Books",
-      "image": "https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?q=80&w=500",
-      "order": 4
-    },
-    {
-      "id": "5",
-      "name": "Health & Beauty",
-      "image": "https://images.unsplash.com/photo-1531751519425-e1fa9110434b?q=80&w=500",
-      "order": 5
-    },
-    {
-      "id": "6",
-      "name": "Toys",
-      "image": "https://images.unsplash.com/photo-1641563817292-d2085b953e78?q=80&w=500",
-      "order": 6
     }
   ],
   "carts": [
