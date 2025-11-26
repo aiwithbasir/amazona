@@ -1,0 +1,10 @@
+{
+    "projects": {
+        "mobile": {
+            "rootDirectory": "mobile"
+        },
+        "admin": {
+            "rootDirectory": "backend"
+        }
+    }
+}

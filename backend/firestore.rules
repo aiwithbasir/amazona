@@ -1,0 +1,33 @@
+rules_version = '2'; // Important to specify the rules version
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Publicly readable collections:
+
+    // Anyone can read documents in the 'products' collection.
+    match /products/{productId} {
+      allow read;
+    }
+
+    // Anyone can read documents in the 'reviews' collection.
+    match /reviews/{reviewId} {
+      allow read;
+    }
+
+    // Anyone can read documents in the 'categories' collection.
+    match /categories/{categoryId} {
+      allow read;
+    }
+
+    // Anyone can read documents in the 'banners' collection.
+    match /banners/{bannerId} {
+      allow read;
+    }
+
+    // This is your original catch-all rule for all *other* documents.
+    // It still requires authentication for read and write.
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

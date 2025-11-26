@@ -1,0 +1,347 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@example.com",
+      "password": "password123",
+      "name": "Demo User",
+      "phone": "1234567890",
+      "addresses": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "originalPrice": 129.99,
+      "categoryId": "1",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80"
+      ],
+      "inStock": true,
+      "stockQuantity": 50,
+      "rating": 4.5,
+      "brand": "SoundMax",
+      "isDeal": true,
+      "isBestseller": true
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "originalPrice": 249.99,
+      "categoryId": "1",
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
+      ],
+      "inStock": true,
+      "stockQuantity": 30,
+      "rating": 4.8,
+      "brand": "TechTime",
+      "isDeal": false,
+      "isBestseller": true
+    },
+    {
+      "id": "3",
+      "name": "Running Shoes",
+      "price": 79.99,
+      "originalPrice": 99.99,
+      "categoryId": "2",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80"
+      ],
+      "inStock": true,
+      "stockQuantity": 100,
+      "rating": 4.2,
+      "brand": "RunFast",
+      "isDeal": true,
+      "isBestseller": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "image": "https://images.unsplash.com/photo-1577375729078-820d5283031c?w=500&q=80",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "name": "Fashion",
+      "image": "https://images.unsplash.com/photo-1590159983013-d4ff5fc71c1d?w=500&q=80",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "name": "Home",
+      "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=500&q=80",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "name": "Books",
+      "image": "https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?q=80&w=500",
+      "order": 4
+    },
+    {
+      "id": "5",
+      "name": "Health & Beauty",
+      "image": "https://images.unsplash.com/photo-1531751519425-e1fa9110434b?q=80&w=500",
+      "order": 5
+    },
+    {
+      "id": "6",
+      "name": "Toys",
+      "image": "https://images.unsplash.com/photo-1641563817292-d2085b953e78?q=80&w=500",
+      "order": 6
+    }
+  ],
+  "carts": [
+    {
+      "id": "d684",
+      "userId": "1",
+      "items": [],
+      "totalAmount": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "c985",
+      "userId": "1",
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 5,
+          "price": 99.99,
+          "productName": "Wireless Headphones",
+          "productImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80"
+        }
+      ],
+      "totalAmount": 499.95,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841025716"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:50:25.716Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:50:25.716Z",
+      "orderNumber": "AMZ-20251122-4873"
+    },
+    {
+      "id": "ee93",
+      "userId": "1",
+      "items": [],
+      "totalAmount": 0,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841032616"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:50:32.616Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:50:32.616Z",
+      "orderNumber": "AMZ-20251122-5922"
+    },
+    {
+      "id": "cc69",
+      "userId": "1",
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 2,
+          "price": 99.99,
+          "productName": "Wireless Headphones",
+          "productImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80"
+        }
+      ],
+      "totalAmount": 199.98,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841147403"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:52:27.404Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:52:27.404Z",
+      "orderNumber": "AMZ-20251122-7944"
+    },
+    {
+      "id": "47a6",
+      "userId": "1",
+      "items": [],
+      "totalAmount": 0,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841172158"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:52:52.158Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:52:52.158Z",
+      "orderNumber": "AMZ-20251122-791"
+    },
+    {
+      "id": "cb5d",
+      "userId": "1",
+      "items": [],
+      "totalAmount": 0,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841178440"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:52:58.440Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:52:58.440Z",
+      "orderNumber": "AMZ-20251122-9716"
+    },
+    {
+      "id": "7e6b",
+      "userId": "1",
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 4,
+          "price": 79.99,
+          "productName": "Running Shoes",
+          "productImage": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80"
+        }
+      ],
+      "totalAmount": 319.96,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841213575"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:53:33.575Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:53:33.575Z",
+      "orderNumber": "AMZ-20251122-5865"
+    },
+    {
+      "id": "2281",
+      "userId": "1",
+      "items": [],
+      "totalAmount": 0,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98109",
+        "country": "USA",
+        "id": "1763841315529"
+      },
+      "status": "pending",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "date": "2025-11-22T19:55:15.529Z"
+        }
+      ],
+      "paymentStatus": "paid",
+      "createdAt": "2025-11-22T19:55:15.529Z",
+      "orderNumber": "AMZ-20251122-4735"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "productId": "1",
+      "userId": "101",
+      "userName": "John Doe",
+      "rating": 5,
+      "comment": "Great sound quality!"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "0cec",
+      "userId": "1",
+      "products": [
+        "1"
+      ]
+    }
+  ],
+  "banners": [
+    {
+      "id": "1",
+      "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800",
+      "title": "Summer Sale",
+      "link": "/category/1"
+    },
+    {
+      "id": "2",
+      "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&q=80",
+      "title": "New Arrivals",
+      "link": "/category/2"
+    },
+    {
+      "id": "3",
+      "image": "https://images.unsplash.com/photo-1546213290-e1b492ab3eee?w=800&q=80",
+      "title": "Best Sellers",
+      "link": "/category/3"
+    },
+    {
+      "id": "4",
+      "image": "https://images.unsplash.com/photo-1607083205626-956228d6185d?w=800&q=80",
+      "title": "Best Deals",
+      "link": "/category/4"
+    }
+  ]
+}
