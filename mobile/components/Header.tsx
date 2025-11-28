@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from "@/components/ui/box";
 import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
@@ -15,7 +15,16 @@ import { showAlert } from '@/utils';
 export const Header = () => {
     const pathName = usePathname()
     const { itemCount } = useCart();
-    // #0078d7
+    const [query, setQuery] = useState('');
+
+    const handleSearch = () => {
+        if (query.trim()) {
+            router.push({
+                pathname: '/(tabs)/search',
+                params: { q: query }
+            });
+        }
+    };
     return (
         <View style={{ backgroundColor: '#ff6200' }} className="py-4">
             <SafeAreaView edges={['top']}>
@@ -29,7 +38,14 @@ export const Header = () => {
                         <InputSlot className="ps-2">
                             <InputIcon as={Search} className="text-gray-500" />
                         </InputSlot>
-                        <InputField placeholder="Search or ask a question" className="text-black" />
+                        <InputField
+                            placeholder="Search or ask a question"
+                            className="text-black"
+                            value={query}
+                            onChangeText={setQuery}
+                            onSubmitEditing={handleSearch}
+                            returnKeyType="search"
+                        />
 
                         <InputSlot className="pe-2">
                             <Pressable onPress={() => showAlert('Find it with an image')}>

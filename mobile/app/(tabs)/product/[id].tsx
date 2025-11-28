@@ -17,6 +17,7 @@ import { Product } from '../../../types';
 import { useCart } from '../../../context/CartContext';
 import { Star, Heart, Share2 } from 'lucide-react-native';
 import { useWishlist } from '../../../context/WishlistContext';
+import { Pressable } from '@/components/ui/pressable';
 
 const { width } = Dimensions.get('window');
 
@@ -124,9 +125,27 @@ export default function ProductDetailScreen() {
                         <Text className="text-red-600 font-bold text-lg">Currently Unavailable</Text>
                     )}
 
-                    <Text className="text-gray-600">
-                        Brand: <Text className="font-bold text-primary-500">{product.brand}</Text>
-                    </Text>
+                    <HStack className="items-center flex-wrap gap-1">
+                        <Text className="text-gray-600">Brand:</Text>
+                        <Button
+                            variant='link'
+                            // className="font-bold text-primary-500 underline"
+                            onPress={() => router.push({ pathname: '/(tabs)/search', params: { q: product.brand } })}
+                        >
+                            {product.brand}
+                        </Button>
+                    </HStack>
+
+                    <HStack className="items-center flex-wrap gap-1">
+                        <Text className="text-gray-600">Category:</Text>
+                        <Button
+                            variant='link'
+                            // className="font-bold text-primary-500 underline"
+                            onPress={() => router.push({ pathname: '/(tabs)/search', params: { categoryId: product.categoryId } })}
+                        >
+                            {typeof product.category === 'object' ? product.category.name : product.category || "Unknown Category"}
+                        </Button>
+                    </HStack>
 
                     <VStack className="gap-4 mt-4">
                         <Button

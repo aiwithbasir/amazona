@@ -112,6 +112,7 @@ export interface Banner {
 export interface ProductFilter {
     query?: string;
     categoryId?: string;
+    subCategoryId?: string;
     brand?: string;
     minRating?: number;
     minPrice?: number;

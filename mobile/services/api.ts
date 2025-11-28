@@ -47,6 +47,10 @@ export const productAPI = {
             constraints.push(where('categoryId', '==', filter.categoryId));
         }
 
+        if (filter.subCategoryId) {
+            constraints.push(where('subCategoryId', '==', filter.subCategoryId));
+        }
+
         if (filter.brand) {
             constraints.push(where('brand', '==', filter.brand));
         }
